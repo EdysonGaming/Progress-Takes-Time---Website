@@ -1,0 +1,59 @@
+<html>
+<head>
+    <title>PROGRESS TAKES TIME</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
+</head>
+<BODY>
+    <section id="banner">
+        <img src="LOGO2.PNG" class="logo">
+        <div class="banner-text">
+            <h1>MOTIVATE</h1>
+            <P>focus,dream big,believe</P>
+            <div class="banner-btn">
+                <a href="#"><span></span>Dream More</a>
+                <a href="#"><span></span>Find Out</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">FEATURES</a></li>
+                <li><a href="#">SERVICE</a></li>
+                <li><a href="#">TESTIMONIALS</a></li>
+                <li><a href="#">MEET US</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id ="menuBtn">
+        <img src="menu.png" id="menu">
+    </div>
+
+ <script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+
+    sideNav.style.right = "-250px";
+
+ menuBtn.onclick = function(){
+    if(sideNav.style.right == "-250px"){
+        sideNav.style.right = "0";
+        menu.src = "close.png";
+    }
+    else{
+        sideNav.style.right = "-250px";
+        menu.scr = "menu.png";
+    }
+ }   
+ </script>
+
+ 
+
+</BODY>
+</html>
